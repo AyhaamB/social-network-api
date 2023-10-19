@@ -23,7 +23,7 @@ connection.once('open', async () => {
   };
 
   // Loop 20 times to add random users to the 'users' array
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 3; i++) {
     const username = getRandomName(); // Assuming getRandomName is a function that generates random names.
     const email = getRandomEmail();
     

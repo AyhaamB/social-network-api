@@ -41,7 +41,7 @@ module.exports = {
         throw new Error("User not found");
       }
 
-      res.json("thought created");
+      res.json('Thought Created');
     } catch (err) {
       console.log(err);
       return res.status(500).json(err.message);
@@ -60,7 +60,7 @@ module.exports = {
       }
 
       // await Student.deleteMany({ _id: { $in: course.students } });
-      res.json({ message: "Thought deleted" });
+      res.json("Thought Deleted");
     } catch (err) {
       res.status(500).json(err);
     }
@@ -78,7 +78,7 @@ module.exports = {
         res.status(404).json({ message: "No thought with this id!" });
       }
 
-      res.json("thought updated");
+      res.json('Thought Updated');
     } catch (err) {
       res.status(500).json(err);
     }
@@ -103,7 +103,7 @@ module.exports = {
       thought.reactions.push(newReaction);
       const savedThought = await thought.save();
 
-      res.status(201).json(savedThought);
+      res.status(201).json('Reaction Added');
     } catch (err) {
       console.log(err);
       return res.status(500).json(err.message);
@@ -133,7 +133,7 @@ module.exports = {
 
       const savedThought = await thought.save();
 
-      res.status(200).json(savedThought);
+      res.status(200).json('Reaction Deleted');
     } catch {
       console.error(err);
       res.status(500).json({ error: "Did no delete reaction" });
