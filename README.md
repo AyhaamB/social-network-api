@@ -6,7 +6,7 @@ See a collection of users with their associated thoughts that can be updated, de
 
 
 ## Executing program
-Website link: https://github.com/AyhaamB/social-network-api
+Application GitHub link: https://github.com/AyhaamB/social-network-api
 
 ## Screenshot of Program
 ![My Image](./images/social-network-api-screenshot.png)
